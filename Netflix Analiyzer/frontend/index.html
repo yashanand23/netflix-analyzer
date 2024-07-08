@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="./stylesheet.css" rel="internal stylesheet">
+  <title>Netflix Analyzer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      background-color: black; 
+      color: white; 
+      overflow-x: hidden;
+    }
+
+    .img_bg {
+      background: url('./images/bg_img_1.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      height: 100vh;
+    }
+
+    .img_bg .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); 
+    }
+    .img_bg .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .netflix_logo{
+      height: 65px;
+      width: 149px;
+      margin-left: 40px;
+    }
+    .title_logo{
+      font-size: 30px;
+      margin-left: 10px;
+      margin-top: 15px;
+      justify-content:center;
+      font-weight: bolder;
+    }
+    .tools{
+      justify-content: flex-end ;
+    }
+    .nav-pills-black .nav-link {
+      color: white;
+    }
+
+    .nav-pills-black .nav-link.active {
+      background-color: red;
+      color: white;
+    }
+    .nav-pills-black .nav-link:hover {
+      background-color: darkred;
+    }
+    #aaa{
+      text-align: center;
+      font-weight: 900;
+      font-size: 50px;
+    }
+    #bbb{
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .top_rated{
+      height: 300px;
+      width: 100%;
+      max-width: 500px;
+      border:3px solid darkgray;
+    }
+    .container-1{
+      display: flex;
+      height: 20px;
+      width: 100%;
+      background-color: black;
+    }
+    .full-width-line {
+      width: 100%;
+      border-top: 2px solid lightgrey;
+      margin-top:3px;
+  }
+    .container-2{
+      display: flex;
+      height: 50px;
+      width: 100%;
+      background-color: black;
+    }
+    .netflix-logo-small{
+      height: 40px;
+      width: auto;
+      margin-left: 50px;
+    }
+    .two{
+      font-size: 25px;
+      margin-left: 8px;
+      margin-top: 10px;
+      justify-content:center;
+      font-weight: bold;
+    }
+    .three{
+      margin-top:20px;
+      position: absolute;
+      right: 0;
+      margin-right: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="header" class="img_bg">
+    <div class="overlay"></div>
+    <div class="container content">
+      <header class="d-flex flex-wrap py-3 px-3 mb-4">
+          <img class="netflix_logo" src="./images/Netflix_logo.png">
+          <p class="title_logo">Analyzer</p>
+          <div class="tools ms-auto">
+          <ul class="nav nav-pills nav-pills-black ">
+            <li class="nav-item"><a href="C:\Users\KIIT\Desktop\Netflix_Analyzer\Netflix Analiyzer\frontend\index.html" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="C:\Users\KIIT\Desktop\Netflix_Analyzer\Netflix Analiyzer\frontend\dashboard.html" class="nav-link">Dashboard</a></li>
+            <li class="nav-item"><a href="C:\Users\KIIT\Desktop\Netflix_Analyzer\Netflix Analiyzer\frontend\faqs.html" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="C:\Users\KIIT\Desktop\Netflix_Analyzer\Netflix Analiyzer\frontend\index.html" class="nav-link">About Us</a></li>
+          </ul>
+          </div>
+        </header>
+          <div class="col-lg-12 mx-5 mt-5 px-5 pt-5" id="aaa">
+                <p>Uncertain about what to watch ?</p>
+          </div>
+          <div class="col-lg-12 px-2" id="bbb">
+                <p>Or want to know about the shows or movies that are grossing top.<p>
+                <p>We got you all covered !</p>
+          </div>
+    </div>
+    </section>
+
+    <hr class="featurette-divider">
+
+    <section id="carasousel" class="cb"></section>
+    <div class="row featurette">
+      <div class="col-lg-7 py-1 px-5 my-5">
+        <h2>Ratings and reviews</h2>
+        <p class="lead">Gain insights from aggregated user ratings and detailed reviews, empowering you to make informed decisions about what to watch next based on the collective opinions of people about the releases.</p>
+      </div>
+      <div class="col-lg-5 py-1 my-5">
+        <img src="./images/top rated.webp" class="top_rated">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-lg-5 py-1 my-5">
+        <img src="./images/details.png" class="top_rated">
+      </div>
+      <div class="col-lg-7 py-1 px-5 my-5">
+        <h2>Detailed information</h2>
+        <p class="lead">Get comprehensive details about your favorite shows, including cast and crew information, plot summaries, user ratings, and reviews. Dive deep into the world of each show and explore every aspect of its production.</p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <section id="carasousel" class="cb">
+    <div class="row featurette">
+      <div class="col-lg-7 py-1 px-5 my-5">
+        <h2>Whats trending</h2>
+        <p class="lead">Stay up-to-date with the latest trends and popular content on Netflix. Helping users discover what's hot and happening in in different regions and genres.</p>
+      </div>
+      <div class="col-lg-5 py-1 my-5">
+        <img src="./images/trending.jpg" class="top_rated">
+      </div>
+    </div>
+  </section>
+  <section id="footer"> 
+    <div class="container-1">
+      <hr class="full-width-line">
+      </div>
+      <div class="container-2">
+      <div class="one"><img src="./images/netflix-icon-icon-2048x2048-yj41gpvr.png" class="netflix-logo-small"></div>
+      <div class="two"><p>Analyzer</p></div>
+      <div class="three"><p>© 2024 Company, Inc</p></div>
+    </div>
+</section> 
+</body>
+</html>
